@@ -3,6 +3,11 @@ pipeline {
     tools{
         maven 'M2_HOME'
     }
+
+    triggers {
+  githubBranches events: [], spec: '* * * * *', triggerMode: 'CRON'
+}
+
     stages {
         stage('Build') {
             steps {
