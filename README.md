@@ -1,4 +1,5 @@
-# patients_geolocation
-Project to locate patients in order to facilitate their home appointments by medical specialists
-For Testing purposes
-For automated testing
+# maven-project
+
+Simple Maven Project
+<br
+For the testing purpose
