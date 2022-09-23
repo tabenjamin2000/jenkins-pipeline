@@ -4,14 +4,14 @@ pipeline {
         maven 'M2_HOME'
     }
     environment {
-    registry = '730137084652.dkr.ecr.us-east-1.amazonaws.com/devops_repository'
-    registryCredential = 'jenkins-ecr'
+    registry = '730137084652.dkr.ecr.us-east-1.amazonaws.com/dev_test'
+    registryCredential = 'ecr-access'
     dockerimage = ''
   }
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/tabenjamin2000/hello_may_22.git'
+                git branch: 'master', url: 'https://github.com/tabenjamin2000/jenkins-pipeline'
             }
         }
         stage('Code Build') {
