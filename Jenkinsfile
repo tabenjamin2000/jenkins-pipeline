@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'master', url: 'https://github.com/tabenjamin2000/jenkins-pipeline'
+                git branch: 'master', url: 'https://github.com/tabenjamin2000/jenkins-pipeline.git'
             }
         }
         stage('Code Build') {
